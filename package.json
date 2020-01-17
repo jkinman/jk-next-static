@@ -1,0 +1,30 @@
+{
+  "name": "jk-next-static",
+  "version": "1.0.0",
+  "description": "ssr react app ",
+  "main": "index.js",
+  "author": "Joel Kinman <joel.kinman@appnovation.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "contentful": "^7.13.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.2.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "postinstall": "yarn getcontent",
+    "getcontent": "babel-node tools/synccontent.js install"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/node": "^7.8.3",
+    "@babel/preset-env": "^7.8.3"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "modules": {
+    "byIdentifier": {},
+    "usedIds": {}
+  },
+  "chunks": {
+    "byName": {
+      "static/runtime/webpack.js": 0,
+      "commons": 1,
+      "framework": 2,
+      "static/AZzYvhueTUUESUeb6bc16/pages/_app.js": 3,
+      "static/AZzYvhueTUUESUeb6bc16/pages/_error.js": 4,
+      "static/AZzYvhueTUUESUeb6bc16/pages/about.js": 5,
+      "static/AZzYvhueTUUESUeb6bc16/pages/about/job.js": 6,
+      "static/AZzYvhueTUUESUeb6bc16/pages/index.js": 7,
+      "static/AZzYvhueTUUESUeb6bc16/pages/workhistory.js": 8,
+      "static/runtime/main.js": 9,
+      "static/runtime/polyfills.js": 10
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      10,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}
