@@ -165,7 +165,7 @@ var Header = function Header() {
 /*! exports provided: 0, 1, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"title\":\"about\",\"subtitle\":\"personal info\"},{\"title\":\"Sand box\",\"subtitle\":\"Joel Kinman - information and experiments\",\"intro\":\"This is a place to post __experiments__, and get filled in on my *professional* experience.![50480586 10161282126245483 7261254598914998272 n](//images.ctfassets.net/26ra8njt06p8/12uL2T7UiXiNTgO1MP6d3V/3bcb0a76bd8796d36660a2a0ad343bb4/50480586_10161282126245483_7261254598914998272_n.jpg)\"}]");
+module.exports = JSON.parse("[{\"title\":\"Joel Kinman\",\"subtitle\":\"I love making cool shit\",\"intro\":\"I've been engineering software for over 20 years, in industries ranging from __Quantum Computing__ and __Blockchain__ development to shipping __13 Video games__.\\n\\nMost of my experiance being in the online world. Using JavaScript since day one to make dynamic apps.\"},{\"title\":\"Sand box\",\"subtitle\":\"Joel Kinman - information and experiments\",\"intro\":\"This is a place to post __experiments__, and get filled in on my *professional* experience.![50480586 10161282126245483 7261254598914998272 n](//images.ctfassets.net/26ra8njt06p8/12uL2T7UiXiNTgO1MP6d3V/3bcb0a76bd8796d36660a2a0ad343bb4/50480586_10161282126245483_7261254598914998272_n.jpg)\"}]");
 
 /***/ }),
 
