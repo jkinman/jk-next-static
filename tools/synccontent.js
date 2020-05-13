@@ -2,7 +2,6 @@ import fs from 'fs'
 import path from 'path'
 import { createClient } from 'contentful'
 
-
 const types = [
     'page',
     'workExperiance'
@@ -24,17 +23,13 @@ export const getContent = async () => {
         })
         .catch(console.log)
         const fields = entries.items.map( item => item.fields)
-        // console.log(entries)
-        // if ( entries.total === 1){
-            // const {fields} = entries.items
-            fs.writeFileSync(
-                path.join(__dirname, '..', 'data', `${type}.json`),
-                JSON.stringify(fields)
-            )
-            console.log(fields)
+        fs.writeFileSync(
+            path.join(__dirname, '..', 'data', `${type}.json`),
+            JSON.stringify(fields)
+        )
+        console.log(fields)
 
-            console.log('> got and wrote content for', type)
-        // }
+        console.log('> got and wrote content for', type)
     })
     return true
 }
