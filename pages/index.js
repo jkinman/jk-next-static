@@ -1,3 +1,10 @@
+import { 
+  ThemeProvider, 
+  createTheme, 
+  Arwes, 
+  Header, 
+  Heading,
+  Frame, Content } from 'arwes'
 import {Layout} from '../layouts/main'
 import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
@@ -5,19 +12,27 @@ import data from '../data/page'
 
 const Index = ( props ) => {
     return(
-    <Layout>
-        <p>pages/index.js</p>
+      <Arwes>
+
+      <Layout>
+          <Content>
         {data.map( page => (
-            <h1>{page.title}</h1>
+            <Heading node='h1'>{page.title}</Heading>
+          ))}
+
+          {Array.isArray(props.shows) && props.shows.map(show => (
+            <li key={show.id}>
+            <Link href="/p/[id]" as={`/p/${show.id}`}>
+              <a>{show.name}</a>
+            </Link>
+          </li>
         ))}
-        {Array.isArray(props.shows) && props.shows.map(show => (
-        <li key={show.id}>
-          <Link href="/p/[id]" as={`/p/${show.id}`}>
-            <a>{show.name}</a>
-          </Link>
-        </li>
-      ))}
-    </Layout>
+        </Content>
+        <Frame animate level={1} corners={3}>
+          <p>frame example</p>
+        </Frame>
+      </Layout>
+      </Arwes>
     )
 }
 
